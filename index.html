@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-ToDo</title>
+    <link
+      rel="shortcut icon"
+      href="/src/assets/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body class="bg-zinc-700">
+    <main class="w-full h-screen p-16 px-[15vw] font-Fredoka">
+      <header class="w-full justify-center text-center text-5xl text-gray-200">
+        My ToDo's
+      </header>
+      <form
+        class="new__todo flex-col flex md:flex-row text-gray-200 mt-8 bg-zinc-800 p-10 rounded-md justify-between items-center"
+      >
+        <div class="flex gap-10 flex-col md:flex-row md:w-[80%]">
+          <div class="flex flex-col">
+            <label for="new-todo__name" class="relative -translate-y-2 text-lg"
+              >Name</label
+            >
+            <input
+              class="px-3 placeholder:font-normal text-purple-900 font-medium text-xl py-1 outline-none border-yellow-500 border-[2.5px] rounded-full bg-zinc-200"
+              type="text"
+              name=""
+              id="new-todo__name"
+              placeholder="e.g. Task 1"
+            />
+          </div>
+          <div class="flex flex-col w-full">
+            <label for="new-todo__dec" class="relative -translate-y-2 text-lg"
+              >Description</label
+            >
+            <input
+              class="px-3 w-full md:w-[80%] placeholder:font-normal text-purple-900 font-medium text-xl py-1 outline-none border-yellow-500 border-[2.5px] rounded-full bg-zinc-200 overflow-y-scroll"
+              type="text"
+              name=""
+              id="new-todo__dec"
+              placeholder="Revise the notes of chemistry"
+            />
+          </div>
+        </div>
+        <button
+          class="btn mr-4 bg-purple-500 active:bg-purple-800 mt-4 md:mt-0 md:translate-y-3"
+          id="add-todo__btn"
+          type="submit"
+        >
+          Add Todo
+        </button>
+      </form>
+      <section class="todos-main__container">
+        <div class="todo__cont _todo"></div>
+      </section>
+      <footer class="absolute bottom-[5%] right-[5%]">
+        <div class="flex gap-3">
+          <a
+            class="hover:scale-110 transition-all duration-75"
+            target="_blank"
+            href="https://github.com/SatyamStellar "
+            ><i class="ri-github-fill text-zinc-400 text-2xl"></i
+          ></a>
+          <a
+            class="hover:scale-110 transition-all duration-75"
+            target="_blank"
+            href="https://www.instagram.com/y.eah_._._/ "
+            ><i class="ri-instagram-fill text-2xl text-zinc-400"></i
+          ></a>
+          <a
+            class="hover:scale-110 transition-all duration-75"
+            target="_blank"
+            href="https://x.com/satyam_stellar "
+            ><i class="ri-twitter-x-fill text-2xl text-zinc-400"></i
+          ></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
