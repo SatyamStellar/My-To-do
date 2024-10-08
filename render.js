@@ -5,7 +5,7 @@ const render = () => {
 
   const todoelems = store.todos.map((todos) => `<div class="mt-8 p-4 px-8 rounded-md flex flex-col md:flex-row justify-between items-center bg-zinc-800 todo__name" data-id=${todos.id}>
             <div class="w-[80%]">
-              <h2 class="text-3xl text-yellow-500 font-medium ${todos.completed ? "completed" : ""}" id="todo__name">
+              <h2 class="text-3xl w-[50%] overflow-y-scroll text-yellow-500 font-medium ${todos.completed ? "completed" : ""}" id="todo__name">
                 ${todos.name}
               </h2>
               <p
